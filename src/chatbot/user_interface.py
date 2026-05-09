@@ -3,7 +3,7 @@ from .llm_client import LLMClient
 def init_conversation ():
     user_exit = False
     llm_client = LLMClient()
-    print("- Funny Technical English Chatbot -")
+    print("English Overflow - debugging your technical English")
     print("Type 'exit' to quit. \n")
 
     user_name = input("Enter your name: ")
