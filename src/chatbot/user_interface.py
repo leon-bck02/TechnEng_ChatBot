@@ -8,6 +8,8 @@ def init_conversation ():
 
     user_name = input("Enter your name: ")
 
+    llm_client.get_conversation_history()[0]["content"] += f"\nThe user's name is {user_name}"
+
     while not user_exit:    
         user_input = input("You: ")
 
