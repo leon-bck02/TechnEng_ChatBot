@@ -1,8 +1,8 @@
-from .llm_client import LLM_Client
+from .llm_client import LLMClient
 
 def init_conversation ():
     user_exit = False
-    llm_client = LLM_Client()
+    llm_client = LLMClient()
     print("- Funny Technical English Chatbot -")
     print("Type 'exit' to quit. \n")
 
@@ -19,7 +19,7 @@ def init_conversation ():
         # Repeat input if no user input is given
         if not user_input:
             continue
-        # If user input is given, try to call the llm
+        # If user input is given, try to call the LLM
         try: 
             displayed_response = llm_client.get_llm_response(user_input)
             print(f"Bot: {displayed_response}")
